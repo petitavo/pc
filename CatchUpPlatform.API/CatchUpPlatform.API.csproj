@@ -18,7 +18,6 @@
 
     <ItemGroup>
       <Folder Include="News\" />
-      <Folder Include="Shared\Domain\Repositories\" />
     </ItemGroup>
 
 </Project>
