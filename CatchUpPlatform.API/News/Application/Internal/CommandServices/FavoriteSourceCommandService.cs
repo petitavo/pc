@@ -15,7 +15,7 @@ public class FavoriteSourceCommandService(IFavoriteSourceRepository favoriteSour
     : IFavoriteSourceCommandService
 {
     /// <inheritdoc cref="IFavoriteSourceCommandService.Handle"/>
-    public async Task<FavoriteSource> Handle(CreateFavoriteSourceCommand command)
+    public async Task<FavoriteSource?> Handle(CreateFavoriteSourceCommand command)
     {
         var favoriteSource =
             await favoriteSourceRepository.FindByNewsApiKeyAndSourceIdAsync(command.NewsApiKey, command.SourceId);

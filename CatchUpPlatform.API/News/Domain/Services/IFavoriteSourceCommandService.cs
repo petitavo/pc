@@ -16,5 +16,5 @@ public interface IFavoriteSourceCommandService
     /// The created favorite source if successful, otherwise null
     /// </returns>
     /// <see cref="CreateFavoriteSourceCommand"/>
-    Task<FavoriteSource> Handle(CreateFavoriteSourceCommand command);
+    Task<FavoriteSource?> Handle(CreateFavoriteSourceCommand command);
 }
