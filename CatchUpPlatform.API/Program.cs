@@ -1,3 +1,8 @@
+using CatchUpPlatform.API.Hr.Application.Internal.CommandServices;
+using CatchUpPlatform.API.Hr.Application.Internal.QueryServices;
+using CatchUpPlatform.API.Hr.Domain.Repositories;
+using CatchUpPlatform.API.Hr.Domain.Services;
+using CatchUpPlatform.API.Hr.Infrastructure.Persistence.EFC.Repositories;
 using CatchUpPlatform.API.News.Application.Internal.CommandServices;
 using CatchUpPlatform.API.News.Application.Internal.QueryServices;
 using CatchUpPlatform.API.News.Domain.Repositories;
@@ -49,6 +54,10 @@ builder.Services.AddScoped<IUnitOfWOrk, UnitOfWork>();
 builder.Services.AddScoped<IFavoriteSourceRepository, FavoriteSourceRepository>();
 builder.Services.AddScoped<IFavoriteSourceCommandService, FavoriteSourceCommandService>();
 builder.Services.AddScoped<IFavoriteSourceQueryService, FavoriteSourceQueryService>();
+
+builder.Services.AddScoped<IClientCommandService, ClientCommandService>();
+builder.Services.AddScoped<IClientRepository, ClientRepository>();
+builder.Services.AddScoped<IClientQueryService, ClientQueryService>();
 
 var app = builder.Build();
 

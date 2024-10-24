@@ -20,4 +20,4 @@ public static class FavoriteSourceResourceFromEntityAssembler
         return new FavoriteSourceResource(entity.Id, entity.NewsApiKey, entity.SourceId);
     }
     
-}
+}   

@@ -19,4 +19,4 @@ public static class CreateFavoriteSourceCommandFromResourceAssembler
     {
         return new CreateFavoriteSourceCommand(resource.NewsApiKey, resource.SourceId);
     }
-}
+}   
